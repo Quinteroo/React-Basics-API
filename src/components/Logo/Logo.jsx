@@ -2,7 +2,9 @@ import "./Logo.css"
 
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <div className="div-logo">
+      <img src="/assets/art-institute-logo.png" alt="art institute chicago logo" />
+    </div>
   )
 }
 

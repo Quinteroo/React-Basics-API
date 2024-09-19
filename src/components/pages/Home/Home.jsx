@@ -1,4 +1,6 @@
 import "./Home.css"
+import Header from "../../Header/Header.jsx"
+import Hero from "../../Hero/Hero.jsx"
 
 
 
@@ -7,7 +9,17 @@ const Home = () => {
 
 
   return (
-    <div><h2>HOME</h2></div>
+    <>
+      <Header />
+      <Hero />
+
+      <section className="gallery">
+
+
+      </section>
+
+    </>
+
   )
 }
 
