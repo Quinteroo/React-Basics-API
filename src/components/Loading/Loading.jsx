@@ -2,7 +2,9 @@ import "./Loading.css"
 
 const Loading = () => {
   return (
-    <div>Loading</div>
+    <div className="loading">
+      <img src="/assets/loading-art.gif" alt="loading-gif" />
+    </div>
   )
 }
 

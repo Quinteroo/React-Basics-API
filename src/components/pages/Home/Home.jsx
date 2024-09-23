@@ -1,25 +1,20 @@
+
 import "./Home.css"
 import Header from "../../Header/Header.jsx"
 import Hero from "../../Hero/Hero.jsx"
+import Gallery from "../../Gallery/Gallery.jsx"
 
 
 
 
 const Home = () => {
 
-
   return (
     <>
       <Header />
       <Hero />
-
-      <section className="gallery">
-
-
-      </section>
-
+      <Gallery />
     </>
-
   )
 }
 

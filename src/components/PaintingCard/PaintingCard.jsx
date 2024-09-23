@@ -1,8 +1,13 @@
 import "./PaintingCard.css"
 
-const PaintingCard = () => {
+const PaintingCard = ({ art }) => {
   return (
-    <div>PaintingCard</div>
+    <div className="painting-card">
+      <div className="art-wrp">
+        <img src={`https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg`} alt={art.title} />
+      </div>
+      <h3>{art.title}</h3>
+    </div>
   )
 }
 

@@ -6,12 +6,11 @@
   flex-wrap: wrap;
   justify-content: start;
   align-items: center ;
-
 }
 
 .div-logo > img {
   width: 75%;
   height: 100%;
   object-fit:contain;
-
+  cursor: pointer;
 }

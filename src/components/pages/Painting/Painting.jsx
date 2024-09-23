@@ -1,8 +1,12 @@
 import "./Painting.css"
+import Header from "../../Header/Header.jsx"
 
 const Painting = () => {
   return (
-    <div>PAINTING</div>
+    <>
+      <Header />
+
+    </>
   )
 }
 
