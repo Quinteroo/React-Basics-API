@@ -1,0 +1,50 @@
+.section-artWork-details{
+
+  margin: 25vh 0 5vh 0;
+  width: 85%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--qgd-color-2);
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.575) 0px 15px 25px;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.div-img-artWork{
+  width: 48%;
+  height: 80%;
+  min-width: 275px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+
+.div-img-artWork > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+.div-text-details{
+  width: 48%;
+  min-width: 275px;
+
+
+}
+
+.back-button{
+  width: 32px;
+  height: 32px;
+  position:fixed;
+  bottom: 15vh;
+  right: 10vw;
+}

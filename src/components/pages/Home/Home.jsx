@@ -12,8 +12,11 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <Gallery />
+      <main>
+        <Hero />
+        <Gallery />
+      </main>
+
     </>
   )
 }

@@ -1,7 +1,6 @@
 import "./Gallery.css"
 import React from "react"
 import { useState, useEffect } from "react"
-import Painting from "../pages/Painting/Painting.jsx"
 import Loading from "../Loading/Loading.jsx"
 import { Link } from "react-router-dom"
 import PaintingCard from "../PaintingCard/PaintingCard.jsx"
@@ -22,9 +21,16 @@ const Gallery = () => {
     setLoading(false)
 
   }, [])
+
+  if (!artWork) {
+    return <Loading />
+  }
+
+
+
   return (
     <section className="gallery">
-      {loading && <Loading />}
+
       {
         artWork.map((art) => (
           <Link key={art.id} to={`/painting/${art.id}`}>

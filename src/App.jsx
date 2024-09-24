@@ -13,8 +13,6 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/painting/:id' element={<Painting />} />
       </Routes>
-
-
     </>
   )
 }
