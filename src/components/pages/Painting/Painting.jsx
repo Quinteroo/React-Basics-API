@@ -3,7 +3,7 @@ import Header from "../../Header/Header.jsx"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import Loading from "../../Loading/Loading.jsx"
-import { Link } from "react-router-dom"
+import BackButton from "../../BackButton/BackButton.jsx"
 
 const Painting = () => {
   const [artWork, setArtWork] = useState(null)
@@ -44,13 +44,7 @@ const Painting = () => {
 
         </section>
 
-        <Link to={"/"} className="back-button">
-          <div className="div-back-button">
-            <img src="/assets/back-button.png" />
-
-          </div>
-        </Link>
-
+        <BackButton />
 
       </main>
 

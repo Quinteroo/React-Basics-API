@@ -1,0 +1,7 @@
+.back-button{
+  width: 32px;
+  height: 32px;
+  position:fixed;
+  bottom: 15vh;
+  right: 10vw;
+}
