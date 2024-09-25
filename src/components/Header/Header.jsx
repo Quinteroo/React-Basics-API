@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <Logo />
-      <a className="github" href="https://github.com/Quinteroo" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a className="github" href="https://github.com/Quinteroo/React-Basics-API" target="_blank" rel="noopener noreferrer">GitHub</a>
     </header>
   )
 }
