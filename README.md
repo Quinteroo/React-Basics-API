@@ -17,6 +17,7 @@ Galería con las obras de arte del Instituta de Arte de Chicago, proyecto básic
 - Uso mínimo de una petición a una API para recoger unos datos
 - Uso de React Router, declaración de rutas y acceder a ellas mediante Links
 - useParams() ruta permite recibir un parámetro
+- Paginación
 - Responsive
 - Buenas prácticas de HTML y CSS
   
@@ -34,6 +35,22 @@ Galería con las obras de arte del Instituta de Arte de Chicago, proyecto básic
 - react
 - react-dom
 - react-router-dom
+
+## API
+La API empleada para el proyecto pertenece a el IAC (Institute Art of Chicago)
+https://api.artic.edu/docs/#quick-start
+
+Para obtener toda la información sobre las obras de arte del Instituto de Arte de Chicago a través de su API, podemos usarr una petición GET al siguiente endpoint:
+
+https://api.artic.edu/api/v1/artworks
+
+
+El Instituto de Arte de Chicago ofrece una API que permite acceder a su colección de obras de arte, exposiciones y datos relacionados. La API está diseñada para integrar la información en aplicaciones o sitios web, proporcionando metadatos detallados sobre obras de arte como títulos, descripciones, información del artista y enlaces a imágenes.
+
+Aunque la API no proporciona directamente los archivos de imagen, ofrece los datos necesarios para construir URL que permiten acceder a las imágenes a través de la IIIF Image API (un estándar internacional para acceder a contenido digital). Estas URL siguen un formato específico para acceder a las imágenes en diferentes tamaños y calidades.
+
+https://www.artic.edu/iiif/2/{identifier}/full/843,/0/default.jpg
+
 
   
 
