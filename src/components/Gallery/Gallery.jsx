@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Loading from "../Loading/Loading.jsx"
 import { Link } from "react-router-dom"
 import PaintingCard from "../PaintingCard/PaintingCard.jsx"
+import Pagination from "../Pagination/Pagination.jsx"
 
 
 const Gallery = () => {
@@ -20,9 +21,9 @@ const Gallery = () => {
       .then((res) => setArtWork(res.data))
     setLoading(false)
 
-  }, [])
+  }, [page])
 
-  if (!artWork) {
+  if (loading) {
     return <Loading />
   }
 
@@ -40,6 +41,7 @@ const Gallery = () => {
         ))
       }
 
+      <Pagination page={page} setPage={setPage} />
 
     </section>
   )

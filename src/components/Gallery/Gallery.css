@@ -11,3 +11,33 @@
   align-items: center;
   gap: 15px;
 }
+
+.div-pagination{
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:15px
+}
+
+.div-pagination > button {
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.5s;
+
+}
+
+.div-pagination > button:hover{
+  background-color: #e690a7;
+}
+
+.div-pagination > button:disabled{
+  cursor:not-allowed;
+}
+
+.div-pagination > p{
+  font-weight: 800;
+}

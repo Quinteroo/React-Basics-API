@@ -33,13 +33,13 @@ const Painting = () => {
           <div className="div-img-artWork">
             <img
               src={`https://www.artic.edu/iiif/2/${artWork?.image_id}/full/843,/0/default.jpg`}
-              alt={artWork.alt_text}
+              alt={artWork?.alt_text}
               onError={(e) => e.target.src = "/assets/imagen-no-disponible.jpg"} />
           </div>
           <div className="div-text-details">
-            <h2>{artWork.title}</h2>
-            <p>{artWork.artist_display}</p>
-            <p>{artWork.place_of_origin}</p>
+            <h2>{artWork?.title}</h2>
+            <p>{artWork?.artist_display}</p>
+            <p>{artWork?.place_of_origin}</p>
           </div>
 
         </section>
